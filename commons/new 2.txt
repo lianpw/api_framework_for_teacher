@@ -1,0 +1,8 @@
+import time
+from webdriver_helper import get_webdriver
+
+
+driver = get_webdriver('chrome')
+driver.get('http:/www.baidu.com')
+time.sleep(3)
+driver.quit()

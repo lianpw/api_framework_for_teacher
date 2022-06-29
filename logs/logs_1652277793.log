@@ -1,0 +1,10 @@
+[2022-05-11 22:03:13,820] logger_util.py->print_log line:13 [INFO] ----------接口测试开始----------
+[2022-05-11 22:03:13,820] logger_util.py->error_log line:10 [ERROR] 规范YAML测试用例报错：----------接口测试开始----------
+[2022-05-11 22:03:13,932] logger_util.py->print_log line:13 [INFO] ----------接口测试开始----------
+[2022-05-11 22:03:13,932] logger_util.py->error_log line:10 [ERROR] 规范YAML测试用例报错：----------接口测试开始----------
+[2022-05-11 22:03:13,953] logger_util.py->print_log line:13 [INFO] ----------接口测试开始----------
+[2022-05-11 22:03:13,954] logger_util.py->error_log line:10 [ERROR] 规范YAML测试用例报错：----------接口测试开始----------
+[2022-05-11 22:03:13,962] logger_util.py->print_log line:13 [INFO] ----------接口测试开始----------
+[2022-05-11 22:03:13,963] logger_util.py->error_log line:10 [ERROR] 规范YAML测试用例报错：----------接口测试开始----------
+[2022-05-11 22:03:13,972] logger_util.py->print_log line:13 [INFO] ----------接口测试开始----------
+[2022-05-11 22:03:13,973] logger_util.py->error_log line:10 [ERROR] 规范YAML测试用例报错：----------接口测试开始----------

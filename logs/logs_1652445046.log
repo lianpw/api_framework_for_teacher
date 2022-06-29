@@ -1,0 +1,71 @@
+[2022-05-13 20:30:46,760] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 20:30:46,760] logger_util.py->print_log line:14 [INFO] 接口名称：成功获取token鉴权码
+[2022-05-13 20:30:46,760] logger_util.py->print_log line:14 [INFO] 请求方式：get
+[2022-05-13 20:30:46,761] logger_util.py->print_log line:14 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-05-13 20:30:46,761] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 20:30:46,761] logger_util.py->print_log line:14 [INFO] 请求params参数：{'grant_type': 'client_credential', 'appid': 'wx8a9de038e93f77ab', 'secret': '8326fc915928dee3165720c910effb86'}
+[2022-05-13 20:30:47,071] logger_util.py->print_log line:14 [INFO] 预期结果：[{'codes': {'status_code': 200}}, {'contains': 'access_token'}]
+[2022-05-13 20:30:47,071] logger_util.py->print_log line:14 [INFO] 实际结果：{'access_token': '56_d0bf9vmCxOZwAqEeso4To_bPQlmLCQrcba-CA19zgiW7NiAVVog3XSBbweYpcUHf1ggK7WxUVo5__srIlgnBI2aXQ1zSjQu1NHvb2PQhjXWr8inmIP_nzQorI1uw2KU7MGLQPhmGH0T8wuuHTQUiAIADAE', 'expires_in': 7200}
+[2022-05-13 20:30:47,071] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 20:30:47,071] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-13 20:30:47,074] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 20:30:47,075] logger_util.py->print_log line:14 [INFO] 接口名称：检查appid为空
+[2022-05-13 20:30:47,075] logger_util.py->print_log line:14 [INFO] 请求方式：get
+[2022-05-13 20:30:47,076] logger_util.py->print_log line:14 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-05-13 20:30:47,076] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 20:30:47,076] logger_util.py->print_log line:14 [INFO] 请求params参数：{'grant_type': 'client_credential', 'appid': 100, 'secret': '8326fc915928dee3165720c910effb86'}
+[2022-05-13 20:30:47,116] logger_util.py->print_log line:14 [INFO] 预期结果：[{'codes': {'status_code': 200}}, {'contains': 40013}]
+[2022-05-13 20:30:47,116] logger_util.py->print_log line:14 [INFO] 实际结果：{'errcode': 40013, 'errmsg': 'invalid appid rid: 627e4f77-6f2d85f3-6bc54020'}
+[2022-05-13 20:30:47,116] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 20:30:47,117] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-13 20:30:47,121] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 20:30:47,121] logger_util.py->print_log line:14 [INFO] 接口名称：检查secret为空1
+[2022-05-13 20:30:47,121] logger_util.py->print_log line:14 [INFO] 请求方式：get
+[2022-05-13 20:30:47,123] logger_util.py->print_log line:14 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-05-13 20:30:47,123] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 20:30:47,123] logger_util.py->print_log line:14 [INFO] 请求params参数：{'grant_type': 'client_credential', 'appid': 'wx8a9de038e93f77ab', 'secret': ''}
+[2022-05-13 20:30:47,217] logger_util.py->print_log line:14 [INFO] 预期结果：[{'codes': {'status_code': 200}}, {'contains': 41004}]
+[2022-05-13 20:30:47,217] logger_util.py->print_log line:14 [INFO] 实际结果：{'errcode': 41004, 'errmsg': 'appsecret missing rid: 627e4f77-60bd51e8-3b9bd5bd'}
+[2022-05-13 20:30:47,217] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 20:30:47,217] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-13 20:30:47,220] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 20:30:47,220] logger_util.py->print_log line:14 [INFO] 接口名称：MD5加密接口
+[2022-05-13 20:30:47,220] logger_util.py->print_log line:14 [INFO] 请求方式：post
+[2022-05-13 20:30:47,220] logger_util.py->print_log line:14 [INFO] 请求路径：http://101.34.221.219:5000/md5login
+[2022-05-13 20:30:47,220] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 20:30:47,220] logger_util.py->print_log line:14 [INFO] 请求data参数：{'username': '21232f297a57a5a743894a0e4a801fc3', 'password': '202cb962ac59075b964b07152d234b70'}
+[2022-05-13 20:30:47,272] logger_util.py->print_log line:14 [INFO] 预期结果：[{'contains': 'MD5加密登陆成功'}]
+[2022-05-13 20:30:47,273] logger_util.py->print_log line:14 [INFO] 实际结果：{'error_code': 0, 'message': 'MD5加密登陆成功！'}
+[2022-05-13 20:30:47,273] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 20:30:47,273] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-13 20:30:47,277] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 20:30:47,277] logger_util.py->print_log line:14 [INFO] 接口名称：MD5加密接口
+[2022-05-13 20:30:47,277] logger_util.py->print_log line:14 [INFO] 请求方式：post
+[2022-05-13 20:30:47,277] logger_util.py->print_log line:14 [INFO] 请求路径：http://101.34.221.219:5000/md5login
+[2022-05-13 20:30:47,277] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 20:30:47,277] logger_util.py->print_log line:14 [INFO] 请求data参数：{'username': 'None', 'password': 'None'}
+[2022-05-13 20:30:47,328] logger_util.py->print_log line:14 [INFO] 预期结果：[{'contains': 'MD5加密登陆成功'}]
+[2022-05-13 20:30:47,328] logger_util.py->print_log line:14 [INFO] 实际结果：{'error_code': 101, 'message': 'MD5加密登陆失败'}
+[2022-05-13 20:30:47,328] logger_util.py->error_log line:10 [ERROR] contains断言失败：返回结果中没有MD5加密登陆成功
+[2022-05-13 20:30:47,329] logger_util.py->error_log line:10 [ERROR] 断言报错：Traceback (most recent call last):
+  File "D:\workspace\pythonwork\vip_pytest_one\commons\assert_utils.py", line 22, in assert_result
+    flag = contains_assert(value, sj_result)
+  File "D:\workspace\pythonwork\vip_pytest_one\commons\assert_utils.py", line 75, in contains_assert
+    error_log("contains断言失败：返回结果中没有"+str(value)+"")
+  File "D:\workspace\pythonwork\vip_pytest_one\commons\logger_util.py", line 11, in error_log
+    raise AssertionError(message)
+AssertionError: contains断言失败：返回结果中没有MD5加密登陆成功
+
+[2022-05-13 20:30:47,329] logger_util.py->error_log line:10 [ERROR] 规范YAML测试用例报错：断言报错：Traceback (most recent call last):
+  File "D:\workspace\pythonwork\vip_pytest_one\commons\assert_utils.py", line 22, in assert_result
+    flag = contains_assert(value, sj_result)
+  File "D:\workspace\pythonwork\vip_pytest_one\commons\assert_utils.py", line 75, in contains_assert
+    error_log("contains断言失败：返回结果中没有"+str(value)+"")
+  File "D:\workspace\pythonwork\vip_pytest_one\commons\logger_util.py", line 11, in error_log
+    raise AssertionError(message)
+AssertionError: contains断言失败：返回结果中没有MD5加密登陆成功
+

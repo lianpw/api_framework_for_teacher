@@ -1,0 +1,8 @@
+-
+  name: 查询标签接口
+  request:
+    method: get
+    base_url: ${read_config(base_url)}
+    url: /cgi-bin/tags/get?access_token=${read_extract(access_token)}
+  validate:
+    - contains: tags

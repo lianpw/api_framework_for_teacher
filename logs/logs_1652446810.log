@@ -1,0 +1,66 @@
+[2022-05-13 21:00:10,454] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 21:00:10,454] logger_util.py->print_log line:14 [INFO] 接口名称：成功获取token鉴权码
+[2022-05-13 21:00:10,455] logger_util.py->print_log line:14 [INFO] 请求方式：get
+[2022-05-13 21:00:10,455] logger_util.py->print_log line:14 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-05-13 21:00:10,455] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 21:00:10,455] logger_util.py->print_log line:14 [INFO] 请求params参数：{'grant_type': 'client_credential', 'appid': 'wx8a9de038e93f77ab', 'secret': '8326fc915928dee3165720c910effb86'}
+[2022-05-13 21:00:10,767] logger_util.py->print_log line:14 [INFO] 预期结果：[{'codes': {'status_code': 200}}, {'contains': 'access_token'}]
+[2022-05-13 21:00:10,767] logger_util.py->print_log line:14 [INFO] 实际结果：{'access_token': '56_vmSpMa9BWumCwBocCOcotVyXK40_Xei1nccnXikBmhlraC9YqaUjq8EJeG4kPtngqwwng1iyEiW-h5IkgpMzle_GAPGzGgJln1s1dO3coYoebQNhpiuUyJH7SS0BhQQusBUnaIqH5Dwbh96PQFEfACALAZ', 'expires_in': 7200}
+[2022-05-13 21:00:10,767] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 21:00:10,767] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-13 21:00:10,770] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 21:00:10,771] logger_util.py->print_log line:14 [INFO] 接口名称：检查appid为空
+[2022-05-13 21:00:10,771] logger_util.py->print_log line:14 [INFO] 请求方式：get
+[2022-05-13 21:00:10,772] logger_util.py->print_log line:14 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-05-13 21:00:10,772] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 21:00:10,772] logger_util.py->print_log line:14 [INFO] 请求params参数：{'grant_type': 'client_credential', 'appid': 100, 'secret': '8326fc915928dee3165720c910effb86'}
+[2022-05-13 21:00:10,814] logger_util.py->print_log line:14 [INFO] 预期结果：[{'codes': {'status_code': 200}}, {'contains': 40013}]
+[2022-05-13 21:00:10,814] logger_util.py->print_log line:14 [INFO] 实际结果：{'errcode': 40013, 'errmsg': 'invalid appid rid: 627e565a-20e728c3-39d2f87c'}
+[2022-05-13 21:00:10,814] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 21:00:10,815] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-13 21:00:10,818] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 21:00:10,818] logger_util.py->print_log line:14 [INFO] 接口名称：检查secret为空1
+[2022-05-13 21:00:10,819] logger_util.py->print_log line:14 [INFO] 请求方式：get
+[2022-05-13 21:00:10,819] logger_util.py->print_log line:14 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-05-13 21:00:10,819] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 21:00:10,819] logger_util.py->print_log line:14 [INFO] 请求params参数：{'grant_type': 'client_credential', 'appid': 'wx8a9de038e93f77ab', 'secret': ''}
+[2022-05-13 21:00:10,940] logger_util.py->print_log line:14 [INFO] 预期结果：[{'codes': {'status_code': 200}}, {'contains': 41004}]
+[2022-05-13 21:00:10,941] logger_util.py->print_log line:14 [INFO] 实际结果：{'errcode': 41004, 'errmsg': 'appsecret missing rid: 627e565a-069c7cb8-60bd1956'}
+[2022-05-13 21:00:10,941] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 21:00:10,941] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-13 21:00:10,945] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 21:00:10,945] logger_util.py->print_log line:14 [INFO] 接口名称：MD5加密接口
+[2022-05-13 21:00:10,945] logger_util.py->print_log line:14 [INFO] 请求方式：post
+[2022-05-13 21:00:10,945] logger_util.py->print_log line:14 [INFO] 请求路径：http://101.34.221.219:5000/md5login
+[2022-05-13 21:00:10,946] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 21:00:10,946] logger_util.py->print_log line:14 [INFO] 请求data参数：{'username': '21232f297a57a5a743894a0e4a801fc3', 'password': '202cb962ac59075b964b07152d234b70'}
+[2022-05-13 21:00:10,999] logger_util.py->print_log line:14 [INFO] 预期结果：[{'contains': 'MD5加密登陆成功'}]
+[2022-05-13 21:00:10,999] logger_util.py->print_log line:14 [INFO] 实际结果：{'error_code': 0, 'message': 'MD5加密登陆成功！'}
+[2022-05-13 21:00:11,000] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 21:00:11,000] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-13 21:00:11,003] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 21:00:11,003] logger_util.py->print_log line:14 [INFO] 接口名称：BASE64加密接口
+[2022-05-13 21:00:11,003] logger_util.py->print_log line:14 [INFO] 请求方式：post
+[2022-05-13 21:00:11,004] logger_util.py->print_log line:14 [INFO] 请求路径：http://101.34.221.219:5000/base64login
+[2022-05-13 21:00:11,004] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 21:00:11,004] logger_util.py->print_log line:14 [INFO] 请求data参数：{'username': 'YWRtaW4=', 'password': 'MTIz'}
+[2022-05-13 21:00:11,057] logger_util.py->print_log line:14 [INFO] 预期结果：[{'contains': 'Base64加密登陆成功'}]
+[2022-05-13 21:00:11,057] logger_util.py->print_log line:14 [INFO] 实际结果：{'error_code': 0, 'message': 'Base64加密登陆成功！'}
+[2022-05-13 21:00:11,057] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 21:00:11,057] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-13 21:00:11,061] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 21:00:11,061] logger_util.py->print_log line:14 [INFO] 接口名称：RSA加密接口
+[2022-05-13 21:00:11,061] logger_util.py->print_log line:14 [INFO] 请求方式：post
+[2022-05-13 21:00:11,062] logger_util.py->print_log line:14 [INFO] 请求路径：http://101.34.221.219:5000/rsalogin
+[2022-05-13 21:00:11,062] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 21:00:11,079] logger_util.py->print_log line:14 [INFO] 请求data参数：{'username': 'cfSFH7F1+kqZ22dN3J94F/X412aY5H0atLFleByTuA78WkOSqZ8ta4ua0QwHr9m1i7SsEfW8MhOPtGCjkUGanQX5T6sq31lLl2UYiiSGhmMpimKZuXd8xC2FWWDJX86kRN4pUyDEkp8t8ulcwFzsMN+zGo5SpS3q+14odlzYAtc=', 'password': 'fjhtLv1HjNdIU58rhHzefWmi8sepmwL5PHnokVdw2Ea34krnB3WHGXwarSiHX51oNRcZO9uPxZk3L0ApAWSiUdOr2PlDXaoogvQnYVdUqofNO3p1/H1LUDEarX1v5iBj0yAHE7alu66qRz324G522prTYtv63mb/MxxDQmy34Tk='}
+[2022-05-13 21:00:11,134] logger_util.py->print_log line:14 [INFO] 预期结果：[{'contains': 'RSA加密登陆成功'}]
+[2022-05-13 21:00:11,134] logger_util.py->print_log line:14 [INFO] 实际结果：{'error_code': 0, 'message': 'RSA加密登陆成功！'}
+[2022-05-13 21:00:11,134] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 21:00:11,134] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+

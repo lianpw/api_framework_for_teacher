@@ -1,0 +1,7 @@
+#基础路径的配置
+base_url: https://api.weixin.qq.com
+#日志的配置
+log:
+  log_file_name: logs_
+  log_level: info
+  log_format: '[%(asctime)s] %(filename)s->%(funcName)s line:%(lineno)d [%(levelname)s] %(message)s'

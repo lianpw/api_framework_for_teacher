@@ -1,0 +1,12 @@
+-
+  name: MD5加密接口
+  request:
+    method: post
+    base_url: http://101.34.221.219:5000
+    url: /md5login
+    headers: null
+    data:
+      username: ${md5(admin)}
+      password: ${md5(123)}
+  validate:
+    - contains: MD5加密登陆成功

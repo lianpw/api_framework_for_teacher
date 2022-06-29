@@ -1,0 +1,14 @@
+-
+  name: SIGN签名接口
+  request:
+    method: post
+    base_url: http://47.107.116.139
+    url: /phpwind/?b=2&c=3
+    headers:
+      sign: ${signs(testcases/user_manager/sign_case.yaml)}
+    params:
+      a: 1
+    data:
+      username: ${get_random(10000,99999)}
+      password: 123
+  validate: null

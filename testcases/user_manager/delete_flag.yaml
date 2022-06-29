@@ -1,0 +1,15 @@
+-
+  name: 删除标签接口
+  request:
+    method: post
+    base_url: ${read_config(base_url)}
+    url: /cgi-bin/tags/delete
+    headers: null
+    params:
+      access_token: ${read_extract(access_token)}
+    json: {"tag":{"id": "$ddt{tag_id}" }}
+  parameterize:
+    - ['name','tag_id']
+    - ['成功删除标签','${read_extract(tag_id)}']
+    - ['删除系统标签合理提示',2]
+  validate: null

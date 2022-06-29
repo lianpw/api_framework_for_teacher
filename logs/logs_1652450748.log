@@ -1,0 +1,7 @@
+[2022-05-13 22:05:48,463] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 22:05:48,463] logger_util.py->print_log line:14 [INFO] 接口名称：SIGN签名接口
+[2022-05-13 22:05:48,464] logger_util.py->print_log line:14 [INFO] 请求方式：post
+[2022-05-13 22:05:48,464] logger_util.py->print_log line:14 [INFO] 请求路径：http://47.107.116.139/phpwind/?b=2&c=3
+[2022-05-13 22:05:48,466] logger_util.py->error_log line:10 [ERROR] 热加载替换值报错：can only concatenate str (not "int") to str
+[2022-05-13 22:05:48,466] logger_util.py->error_log line:10 [ERROR] 发送请求报错：热加载替换值报错：can only concatenate str (not "int") to str
+[2022-05-13 22:05:48,471] logger_util.py->error_log line:10 [ERROR] 规范YAML测试用例报错：发送请求报错：热加载替换值报错：can only concatenate str (not "int") to str

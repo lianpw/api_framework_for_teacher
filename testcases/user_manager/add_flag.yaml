@@ -1,0 +1,14 @@
+-
+  name: 创建标签接口
+  request:
+    method: post
+    base_url: ${read_config(base_url)}
+    url: /cgi-bin/tags/create
+    headers: null
+    params:
+      access_token: ${read_extract(access_token)}
+    json: {"tag":{"name":"百里${get_randoms()}"}}
+  extract:
+    tag_id: $.tag.id
+  validate:
+    - contains: id

@@ -1,0 +1,12 @@
+-
+  name: BASE64加密接口
+  request:
+    method: post
+    base_url: http://101.34.221.219:5000
+    url: /base64login
+    headers: null
+    data:
+      username: ${bs64(admin)}
+      password: ${bs64(123)}
+  validate:
+    - contains: Base64加密登陆成功

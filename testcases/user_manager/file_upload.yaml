@@ -1,0 +1,12 @@
+-
+  name: 文件上传接口
+  request:
+    method: post
+    base_url: ${read_config(base_url)}
+    url: /cgi-bin/media/uploadimg
+    headers: null
+    params:
+      access_token: ${read_extract(access_token)}
+    files:
+      media: "E:\\shu.jpg"
+  validate: null

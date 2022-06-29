@@ -1,0 +1,25 @@
+-
+  name: $ddt{name}
+  request:
+    method: get
+    base_url: ${read_config(base_url)}
+    url: /cgi-bin/token
+    headers: null
+    params:
+      grant_type: $ddt{grant_type}
+      appid: $ddt{appid}
+      secret: $ddt{secret}
+  extract:
+    access_token: '"access_token":"(.*?)"'
+    expires_in: $.expires_in
+  parameterize:
+    - [ 'name','appid','secret','grant_type','assert_str' ]
+    - [ '成功获取token鉴权码','wx8a9de038e93f77ab','8326fc915928dee3165720c910effb86','client_credential','access_token' ]
+    - [ '检查appid为空',100,'8326fc915928dee3165720c910effb86','client_credential',40013 ]
+    - [ '检查secret为空1','wx8a9de038e93f77ab','','client_credential',41004 ]
+  validate:
+    - codes: {status_code: 200}
+    - contains: $ddt{assert_str}
+#    - equals: {expires_in: 7200}
+#    - contains: access_token
+#    - db_equals: {"select status from pw_user where username='admin'": expires_in}

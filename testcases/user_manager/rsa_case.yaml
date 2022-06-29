@@ -1,0 +1,12 @@
+-
+  name: RSA加密接口
+  request:
+    method: post
+    base_url: http://101.34.221.219:5000
+    url: /rsalogin
+    headers: null
+    data:
+      username: ${rsa_public_jiami(admin)}
+      password: ${rsa_public_jiami(123)}
+  validate:
+    - contains: RSA加密登陆成功

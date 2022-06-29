@@ -1,0 +1,63 @@
+[2022-05-13 20:59:43,908] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 20:59:43,908] logger_util.py->print_log line:14 [INFO] 接口名称：成功获取token鉴权码
+[2022-05-13 20:59:43,908] logger_util.py->print_log line:14 [INFO] 请求方式：get
+[2022-05-13 20:59:43,908] logger_util.py->print_log line:14 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-05-13 20:59:43,909] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 20:59:43,909] logger_util.py->print_log line:14 [INFO] 请求params参数：{'grant_type': 'client_credential', 'appid': 'wx8a9de038e93f77ab', 'secret': '8326fc915928dee3165720c910effb86'}
+[2022-05-13 20:59:44,270] logger_util.py->print_log line:14 [INFO] 预期结果：[{'codes': {'status_code': 200}}, {'contains': 'access_token'}]
+[2022-05-13 20:59:44,270] logger_util.py->print_log line:14 [INFO] 实际结果：{'access_token': '56_YxTtQBX-pTWdUgQfMRwU93M5ci-YCy6WhdHZurbFDgx4gBfQRMtnqIYqqxxAAnuCoPbZhAdLOohTwIQPp1O4J17lblsv4NKWi4bWCsDOcqGgyHIUYBENs1Q90P0tTMF_FUwgHFg1Zxl2ibh5KNTeACADGM', 'expires_in': 7200}
+[2022-05-13 20:59:44,270] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 20:59:44,270] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-13 20:59:44,274] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 20:59:44,274] logger_util.py->print_log line:14 [INFO] 接口名称：检查appid为空
+[2022-05-13 20:59:44,274] logger_util.py->print_log line:14 [INFO] 请求方式：get
+[2022-05-13 20:59:44,274] logger_util.py->print_log line:14 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-05-13 20:59:44,276] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 20:59:44,276] logger_util.py->print_log line:14 [INFO] 请求params参数：{'grant_type': 'client_credential', 'appid': 100, 'secret': '8326fc915928dee3165720c910effb86'}
+[2022-05-13 20:59:44,325] logger_util.py->print_log line:14 [INFO] 预期结果：[{'codes': {'status_code': 200}}, {'contains': 40013}]
+[2022-05-13 20:59:44,325] logger_util.py->print_log line:14 [INFO] 实际结果：{'errcode': 40013, 'errmsg': 'invalid appid rid: 627e5640-5b22523d-12575295'}
+[2022-05-13 20:59:44,326] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 20:59:44,326] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-13 20:59:44,329] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 20:59:44,329] logger_util.py->print_log line:14 [INFO] 接口名称：检查secret为空1
+[2022-05-13 20:59:44,329] logger_util.py->print_log line:14 [INFO] 请求方式：get
+[2022-05-13 20:59:44,330] logger_util.py->print_log line:14 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-05-13 20:59:44,330] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 20:59:44,330] logger_util.py->print_log line:14 [INFO] 请求params参数：{'grant_type': 'client_credential', 'appid': 'wx8a9de038e93f77ab', 'secret': ''}
+[2022-05-13 20:59:44,466] logger_util.py->print_log line:14 [INFO] 预期结果：[{'codes': {'status_code': 200}}, {'contains': 41004}]
+[2022-05-13 20:59:44,466] logger_util.py->print_log line:14 [INFO] 实际结果：{'errcode': 41004, 'errmsg': 'appsecret missing rid: 627e5640-28108461-2fce55d2'}
+[2022-05-13 20:59:44,466] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 20:59:44,466] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-13 20:59:44,469] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 20:59:44,470] logger_util.py->print_log line:14 [INFO] 接口名称：MD5加密接口
+[2022-05-13 20:59:44,470] logger_util.py->print_log line:14 [INFO] 请求方式：post
+[2022-05-13 20:59:44,470] logger_util.py->print_log line:14 [INFO] 请求路径：http://101.34.221.219:5000/md5login
+[2022-05-13 20:59:44,470] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 20:59:44,470] logger_util.py->print_log line:14 [INFO] 请求data参数：{'username': '21232f297a57a5a743894a0e4a801fc3', 'password': '202cb962ac59075b964b07152d234b70'}
+[2022-05-13 20:59:44,525] logger_util.py->print_log line:14 [INFO] 预期结果：[{'contains': 'MD5加密登陆成功'}]
+[2022-05-13 20:59:44,525] logger_util.py->print_log line:14 [INFO] 实际结果：{'error_code': 0, 'message': 'MD5加密登陆成功！'}
+[2022-05-13 20:59:44,525] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 20:59:44,525] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-13 20:59:44,528] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 20:59:44,528] logger_util.py->print_log line:14 [INFO] 接口名称：BASE64加密接口
+[2022-05-13 20:59:44,528] logger_util.py->print_log line:14 [INFO] 请求方式：post
+[2022-05-13 20:59:44,528] logger_util.py->print_log line:14 [INFO] 请求路径：http://101.34.221.219:5000/base64login
+[2022-05-13 20:59:44,528] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 20:59:44,528] logger_util.py->print_log line:14 [INFO] 请求data参数：{'username': 'YWRtaW4=', 'password': 'MTIz'}
+[2022-05-13 20:59:44,585] logger_util.py->print_log line:14 [INFO] 预期结果：[{'contains': 'Base64加密登陆成功'}]
+[2022-05-13 20:59:44,586] logger_util.py->print_log line:14 [INFO] 实际结果：{'error_code': 0, 'message': 'Base64加密登陆成功！'}
+[2022-05-13 20:59:44,586] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 20:59:44,586] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-13 20:59:44,589] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 20:59:44,589] logger_util.py->print_log line:14 [INFO] 接口名称：RSA加密接口
+[2022-05-13 20:59:44,589] logger_util.py->print_log line:14 [INFO] 请求方式：post
+[2022-05-13 20:59:44,589] logger_util.py->print_log line:14 [INFO] 请求路径：http://101.34.221.219:5000/rsalogin
+[2022-05-13 20:59:44,590] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 20:59:44,590] logger_util.py->error_log line:10 [ERROR] 热加载替换值报错：[Errno 2] No such file or directory: 'public.pem'
+[2022-05-13 20:59:44,590] logger_util.py->error_log line:10 [ERROR] 发送请求报错：热加载替换值报错：[Errno 2] No such file or directory: 'public.pem'
+[2022-05-13 20:59:44,590] logger_util.py->error_log line:10 [ERROR] 规范YAML测试用例报错：发送请求报错：热加载替换值报错：[Errno 2] No such file or directory: 'public.pem'

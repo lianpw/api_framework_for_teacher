@@ -1,0 +1,33 @@
+[2022-05-11 22:09:55,703] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-11 22:09:55,703] logger_util.py->print_log line:14 [INFO] 接口名称：成功获取token鉴权码
+[2022-05-11 22:09:55,703] logger_util.py->print_log line:14 [INFO] 请求方式：get
+[2022-05-11 22:09:55,704] logger_util.py->print_log line:14 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-05-11 22:09:55,704] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-11 22:09:55,704] logger_util.py->print_log line:14 [INFO] 请求params参数：{'grant_type': 'client_credential', 'appid': 'wx8a9de038e93f77ab', 'secret': '8326fc915928dee3165720c910effb86'}
+[2022-05-11 22:09:56,038] logger_util.py->print_log line:14 [INFO] 预期结果：[{'codes': {'status_code': 200}}, {'contains': 'access_token'}]
+[2022-05-11 22:09:56,038] logger_util.py->print_log line:14 [INFO] 实际结果：{'access_token': '56_dmZka0MrJbp6lkylOBLtawyddqHDbVahMvZQea3nXJAk5ppkvou4W_KIyjwP90OxSA_hVJmDwBrA8TYTva5bIsmgMl-N8zAfVG-Nwj40cBz1PlZw3OPGx5svL509TPMwSpcBjRj2m7GvHqaXHDAdAFAYUR', 'expires_in': 7200}
+[2022-05-11 22:09:56,038] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-11 22:09:56,038] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-11 22:09:56,042] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-11 22:09:56,042] logger_util.py->print_log line:14 [INFO] 接口名称：检查appid为空
+[2022-05-11 22:09:56,042] logger_util.py->print_log line:14 [INFO] 请求方式：get
+[2022-05-11 22:09:56,043] logger_util.py->print_log line:14 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-05-11 22:09:56,043] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-11 22:09:56,043] logger_util.py->print_log line:14 [INFO] 请求params参数：{'grant_type': 'client_credential', 'appid': 100, 'secret': '8326fc915928dee3165720c910effb86'}
+[2022-05-11 22:09:56,089] logger_util.py->print_log line:14 [INFO] 预期结果：[{'codes': {'status_code': 200}}, {'contains': 40013}]
+[2022-05-11 22:09:56,089] logger_util.py->print_log line:14 [INFO] 实际结果：{'errcode': 40013, 'errmsg': 'invalid appid rid: 627bc3b3-3463357d-0955f446'}
+[2022-05-11 22:09:56,089] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-11 22:09:56,089] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-11 22:09:56,094] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-11 22:09:56,094] logger_util.py->print_log line:14 [INFO] 接口名称：检查secret为空1
+[2022-05-11 22:09:56,094] logger_util.py->print_log line:14 [INFO] 请求方式：get
+[2022-05-11 22:09:56,095] logger_util.py->print_log line:14 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-05-11 22:09:56,095] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-11 22:09:56,095] logger_util.py->print_log line:14 [INFO] 请求params参数：{'grant_type': 'client_credential', 'appid': 'wx8a9de038e93f77ab', 'secret': ''}
+[2022-05-11 22:09:56,224] logger_util.py->print_log line:14 [INFO] 预期结果：[{'codes': {'status_code': 200}}, {'contains': 41004}]
+[2022-05-11 22:09:56,224] logger_util.py->print_log line:14 [INFO] 实际结果：{'errcode': 41004, 'errmsg': 'appsecret missing rid: 627bc3b3-59d1ea11-1079296c'}
+[2022-05-11 22:09:56,224] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-11 22:09:56,224] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+

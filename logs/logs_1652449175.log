@@ -1,0 +1,13 @@
+[2022-05-13 21:39:35,381] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 21:39:35,381] logger_util.py->print_log line:14 [INFO] 接口名称：SIGN签名接口
+[2022-05-13 21:39:35,381] logger_util.py->print_log line:14 [INFO] 请求方式：post
+[2022-05-13 21:39:35,381] logger_util.py->print_log line:14 [INFO] 请求路径：http://47.107.116.139/phpwind/?b=2&c=3
+[2022-05-13 21:39:35,382] logger_util.py->print_log line:14 [INFO] 请求headers参数：{'sign': 'success'}
+[2022-05-13 21:39:35,382] logger_util.py->print_log line:14 [INFO] 请求params参数：{'a': 1}
+[2022-05-13 21:39:35,388] logger_util.py->print_log line:14 [INFO] 请求data参数：{'username': 'admin', 'password': 123}
+[2022-05-13 21:39:35,464] logger_util.py->print_log line:14 [INFO] 返回的结果不是json数据格式!
+[2022-05-13 21:39:35,464] logger_util.py->print_log line:14 [INFO] 预期结果：None
+[2022-05-13 21:39:35,464] logger_util.py->print_log line:14 [INFO] 实际结果：
+[2022-05-13 21:39:35,464] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 21:39:35,464] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+

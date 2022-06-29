@@ -1,0 +1,41 @@
+[2022-05-13 20:14:57,531] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 20:14:57,531] logger_util.py->print_log line:14 [INFO] 接口名称：成功获取token鉴权码
+[2022-05-13 20:14:57,531] logger_util.py->print_log line:14 [INFO] 请求方式：get
+[2022-05-13 20:14:57,532] logger_util.py->print_log line:14 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-05-13 20:14:57,532] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 20:14:57,532] logger_util.py->print_log line:14 [INFO] 请求params参数：{'grant_type': 'client_credential', 'appid': 'wx8a9de038e93f77ab', 'secret': '8326fc915928dee3165720c910effb86'}
+[2022-05-13 20:14:57,919] logger_util.py->print_log line:14 [INFO] 预期结果：[{'codes': {'status_code': 200}}, {'contains': 'access_token'}]
+[2022-05-13 20:14:57,919] logger_util.py->print_log line:14 [INFO] 实际结果：{'access_token': '56_dFG-PlcAXpbxnXLRbtmo-Bkhm3rj-_OYJ9-IDFKz37l2REjjEMGOPOcgxMiuw0x5drUAE5v_-s9uQcCHNAIs6PkSf5R7vAmzn81nFrXSvWf8-JW6hviuI5HyzOxyLcSff3OHx1ynhbO06xk2FZVdACAWQM', 'expires_in': 7200}
+[2022-05-13 20:14:57,919] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 20:14:57,919] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-13 20:14:57,921] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 20:14:57,922] logger_util.py->print_log line:14 [INFO] 接口名称：检查appid为空
+[2022-05-13 20:14:57,922] logger_util.py->print_log line:14 [INFO] 请求方式：get
+[2022-05-13 20:14:57,923] logger_util.py->print_log line:14 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-05-13 20:14:57,923] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 20:14:57,923] logger_util.py->print_log line:14 [INFO] 请求params参数：{'grant_type': 'client_credential', 'appid': 100, 'secret': '8326fc915928dee3165720c910effb86'}
+[2022-05-13 20:14:57,965] logger_util.py->print_log line:14 [INFO] 预期结果：[{'codes': {'status_code': 200}}, {'contains': 40013}]
+[2022-05-13 20:14:57,965] logger_util.py->print_log line:14 [INFO] 实际结果：{'errcode': 40013, 'errmsg': 'invalid appid rid: 627e4bc1-7db8705d-7d4b6513'}
+[2022-05-13 20:14:57,965] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 20:14:57,965] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-13 20:14:57,969] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 20:14:57,969] logger_util.py->print_log line:14 [INFO] 接口名称：检查secret为空1
+[2022-05-13 20:14:57,969] logger_util.py->print_log line:14 [INFO] 请求方式：get
+[2022-05-13 20:14:57,970] logger_util.py->print_log line:14 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-05-13 20:14:57,970] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 20:14:57,970] logger_util.py->print_log line:14 [INFO] 请求params参数：{'grant_type': 'client_credential', 'appid': 'wx8a9de038e93f77ab', 'secret': ''}
+[2022-05-13 20:14:58,097] logger_util.py->print_log line:14 [INFO] 预期结果：[{'codes': {'status_code': 200}}, {'contains': 41004}]
+[2022-05-13 20:14:58,098] logger_util.py->print_log line:14 [INFO] 实际结果：{'errcode': 41004, 'errmsg': 'appsecret missing rid: 627e4bc1-64e06d9e-7e6821c8'}
+[2022-05-13 20:14:58,098] logger_util.py->print_log line:14 [INFO] 接口测试成功
+[2022-05-13 20:14:58,098] logger_util.py->print_log line:14 [INFO] ----------接口测试结束----------
+
+[2022-05-13 20:14:58,102] logger_util.py->print_log line:14 [INFO] ----------接口测试开始----------
+[2022-05-13 20:14:58,103] logger_util.py->print_log line:14 [INFO] 接口名称：MD5加密接口
+[2022-05-13 20:14:58,103] logger_util.py->print_log line:14 [INFO] 请求方式：post
+[2022-05-13 20:14:58,103] logger_util.py->print_log line:14 [INFO] 请求路径：http://101.34.221.219:5000/md5login
+[2022-05-13 20:14:58,103] logger_util.py->print_log line:14 [INFO] 请求headers参数：None
+[2022-05-13 20:14:58,103] logger_util.py->error_log line:10 [ERROR] 热加载替换值报错：'DebugTalk' object has no attribute 'md5'
+[2022-05-13 20:14:58,103] logger_util.py->error_log line:10 [ERROR] 发送请求报错：热加载替换值报错：'DebugTalk' object has no attribute 'md5'
+[2022-05-13 20:14:58,103] logger_util.py->error_log line:10 [ERROR] 规范YAML测试用例报错：发送请求报错：热加载替换值报错：'DebugTalk' object has no attribute 'md5'

@@ -1,0 +1,15 @@
+-
+  name: 登陆phpwind
+  request:
+    method: post
+    url: http://47.107.116.139/phpwind/index.php?m=u&c=login&a=dorun
+    headers:
+      Accept: application/json, text/javascript, /; q=0.01
+      X-Requested-With: XMLHttpRequest
+    data:
+      username: admin
+      password: msjy123
+      csrf_token: abc
+      backurl: http://47.107.116.139/phpwind/
+      invite: ""
+  validate: null
